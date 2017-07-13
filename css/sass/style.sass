@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900');
 // $accent-color: #ff2d2d
+$max-width: 1920px
 
 @import "reset"
 
@@ -8,8 +9,12 @@
 html
 	font-family: 'Roboto', sans-serif;
 	font-size: 100%
-	// 	max-width: 1577px
-	// 	margin: 0 auto
+	@media screen and (max-width: 1670px)
+		font-size: 90%
+	@media screen and (max-width: 1570px)
+		font-size: 80%
+	@media screen and (max-width: 1420px)
+		font-size: 70%
 
 a 	
   text-decoration: none

@@ -2,15 +2,21 @@ header
 	background: url("/img/bgi.jpg") no-repeat
 	background-size: cover
 	height: 64rem
-.top-menu
+.wrap-top-menu //обертка для возможности центрирования и ограничения ширины вложенного контейнера
+	display: flex
+	align-items: center
+	justify-content: center
 	height: 7rem
 	background-color: #fff
+	margin-bottom: 8rem
+.top-menu
+	width: 100%
+	max-width: $max-width
 	display: flex
-	padding: 0 5.625em
-	margin-bottom: 8em
-	flex-flow: row // строка многострочный
-	// Расположение элементов относительно поперечной оси на строке
+	flex-flow: row 
 	justify-content: space-between
+	align-items: center	
+	padding: 0 5.625rem
 	nav
 		li
 			display: inline-flex
@@ -20,22 +26,106 @@ header
 				text-transform: uppercase
 				font-size: 1.5em
 				font-weight: 500
-				margin: 1.83em 2.3em 0 0
-	
+				margin: 0 2.3em 0 0
 .wrap-phone
-	margin-top: 2.75em
-	button
-		font-family: 'Roboto', sans-serif;
-		font-size: 1.5em
-		text-transform: uppercase
-	a
-		font-size: 1.5em
+	display: flex
+	align-items: center	
+.phone
+	// margin-top: 2.75em
+	font-size: 1.5em
+	color: #3b3646
+	position: relative
+	font-weight: 500
+	margin-right: 2.3em
+	i
+		font-size: 2em
+		position: absolute
+		top: -0.3em
+		left: -1.4em
+.nav-btn
+	display: inline-flex
+	align-items: center	
+	justify-content: center
+	margin: 0
+	font-size: 1.5em
+	text-transform: uppercase
+	color: #fff
+	background-color: #3b3646
+	width: 18.75rem
+	height: 4.25rem
+	border-radius: 1.5em
+	&:active
+		background-color: #fff
+		border: 4px solid #3b3646
 		color: #3b3646
-		position: relative
+.wrap-header
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+	align-items: start
+	margin: 0 auto
+	max-width: $max-width
+	padding: 0 7.5rem
+	color: #fff
+	h1
+		text-transform: uppercase
+		font-weight: 900
+		letter-spacing: 4px
+		font-size: 2.25rem
+		padding-bottom: .6em
+		// @media screen and (max-width: 1864px)
+		// 	font-size: 2rem
+	p 
+		font-size: 1em
+		padding-bottom: 1.25em
+		// @media screen and (max-width: 1742px)
+		// 	padding-bottom: .75em
+	ul 
+		padding-left: 2em
+		padding-bottom: 2em
+		// @media screen and (max-width: 1742px)
+		// 	padding-bottom: .75em
+	h3
+		font-size: 1.5rem
 		font-weight: 500
-		margin-right: 2.3em
-		i
-			font-size: 2em
-			position: absolute
-			top: -0.25em
-			left: -1.34em
+		padding-bottom: 1.5em
+		// @media screen and (max-width: 1800px)
+		// 	padding-bottom: 1em
+		a
+			color: #fff
+			text-decoration: underline
+.line-through //перечеркивание текста
+	text-decoration: line-through
+.wrap-text
+	display: flex
+	flex-flow: column
+	justify-content: space-between
+	// height: 670px
+	// @media screen and (max-width: 1864px)
+	// 	height: auto
+.btn
+	display: flex
+	align-items: center	
+	justify-content: center
+	margin: 0
+	font-size: 1.5em
+	text-transform: uppercase
+	color: #fff
+	width: 18.75rem
+	height: 4.25rem
+	border-radius: 1.5em
+	border: 2px solid #fff
+	margin: 0 auto
+	&:active
+		background-color: #3b3646
+		border: none
+.wrap-img
+	margin-right: 3.1rem
+	// @media screen and (max-width: 1864px)
+	// 	margin-right: 0
+	img
+		width: 51rem
+		height: auto
+		transition: all ease 1s
+		// @media screen and (max-width: 1800px)
+		// 	width: 90%	
