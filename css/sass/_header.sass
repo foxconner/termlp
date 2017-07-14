@@ -15,6 +15,7 @@ header
 		margin-bottom: 5.5rem
 	@media screen and (max-width: 870px)
 		margin: 0
+		height: auto
 .top-menu
 	width: 100%
 	max-width: $max-width
@@ -26,11 +27,19 @@ header
 	@media screen and (max-width: 1090px)
 		padding: 0 
 		width: 95%
-	@media screen and (max-width: 800px)
-		flex-wrap: wrap
+	@media screen and (max-width: 870px)
+		align-items: flex-start
+		// width: 100%
+		margin-top: 13px
 	nav
+		align-self: flex-end
+		[type="checkbox"]
+			display: none
+		// @media screen and (max-width: 870px)
+		// 	overflow: hidden
 		li
 			display: inline-flex
+			list-style: none
 			// align-items: center
 			a
 				color: #3b3646
@@ -47,13 +56,25 @@ header
 				flex-wrap: nowrap
 				li
 					margin-right: 5%
+			@media screen and (max-width: 870px)
+				display: block
+				li
+					display: block
+	label.toggle-menu
+		display: inline-flex
+		font-size: 2rem
+		// height: 50px
+		// width: 50px
+		justify-content: center
+		align-items: center
 .wrap-phone
 	display: flex
 	align-items: center
 	@media screen and (max-width: 1000px)
 		justify-content: space-between
-	@media screen and (max-width: 800px)
-		flex-wrap: wrap	
+	// @media screen and (max-width: 870px)
+	// 	display: none
+	// 	flex-wrap: wrap	
 .phone
 	// margin-top: 2.75em
 	font-size: 1.5em
@@ -99,6 +120,7 @@ header
 	@media screen and (max-width: 870px)
 		flex-flow: column nowrap
 		align-items: center
+		width: 100%
 	@media screen and (max-width: 800px)
 		flex-wrap: wrap
 	h1
@@ -163,7 +185,8 @@ header
 	@media screen and (max-width: 870px)
 		text-align: center
 		width: 100%
-		margin: 8% 0 5% 0
+		margin: 0 0 5% 0
+		background-color: #fff
 	img
 		width: 51rem
 		height: auto
@@ -171,4 +194,4 @@ header
 		@media screen and (max-width: 1230px)
 			width: 95%
 		@media screen and (max-width: 870px)
-			width: 90%	
+			width: 70%	
