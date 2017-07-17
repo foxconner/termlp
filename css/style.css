@@ -462,6 +462,9 @@ input.toggle-menu:checked ~ ul {
     letter-spacing: 4px;
     font-size: 2.25rem;
     padding-bottom: .6em; }
+    @media screen and (max-width: 870px) {
+      .wrap-header h1 {
+        text-align: center; } }
   .wrap-header p {
     font-size: 1em;
     padding-bottom: 1.25em; }
@@ -495,7 +498,8 @@ input.toggle-menu:checked ~ ul {
   justify-content: space-between; }
   @media screen and (max-width: 870px) {
     .wrap-text {
-      margin-bottom: 5%; } }
+      margin-bottom: 30px;
+      width: 95%; } }
 
 .btn {
   display: -webkit-box;

@@ -173,7 +173,9 @@ input.toggle-menu:checked ~ ul
 		font-weight: 900
 		letter-spacing: 4px
 		font-size: 2.25rem
-		padding-bottom: .6em		
+		padding-bottom: .6em
+		@media screen and (max-width: 870px)
+			text-align: center		
 		// @media screen and (max-width: 870px)
 		// 	font-size: 3em
 	p 
@@ -202,7 +204,8 @@ input.toggle-menu:checked ~ ul
 	flex-flow: column
 	justify-content: space-between
 	@media screen and (max-width: 870px)
-		margin-bottom: 5%
+		margin-bottom: 30px
+		width: 95%
 	// height: 670px
 	// @media screen and (max-width: 1864px)
 	// 	height: auto
