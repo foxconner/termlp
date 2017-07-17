@@ -29,10 +29,11 @@ header
 		width: 95%
 	@media screen and (max-width: 870px)
 		align-items: flex-start
-		// width: 100%
-		margin-top: 13px
+		width: 100%
+		// margin-top: 13px
 	nav
-		align-self: flex-end
+		// align-self: flex-end
+		overflow: hidden
 		[type="checkbox"]
 			display: none
 		// @media screen and (max-width: 870px)
@@ -58,23 +59,56 @@ header
 					margin-right: 5%
 			@media screen and (max-width: 870px)
 				display: block
+				max-height: 0
+				transition: max-height 0.3s
+				background: #3b3646
+				// #f1e5ff
+				// padding-right: 10px
 				li
 					display: block
+					margin: 0
+				a 
+				    display: flex
+				    align-items: center
+				    justify-content: center
+				    color: #fff
+				    height: 30px
+				    padding-left: 10px
+				    border-bottom: 1px solid #e2d4ff
+				    font-size: 1.3em
+				    font-weight: 400
+				    &:hover
+				    	background-color: #fff
+		@media screen and (max-width: 870px)
+			width: 100%
+			position: relative
 	label.toggle-menu
-		display: inline-flex
+		display: none
 		font-size: 2rem
-		// height: 50px
-		// width: 50px
+		height: 50px
+		width: 50px
 		justify-content: center
 		align-items: center
+		cursor: pointer
+		@media screen and (max-width: 870px)
+			display: inline-flex
+input.toggle-menu:checked + label.toggle-menu
+	background-color: #3b3646
+	color: #fff
+input.toggle-menu:checked ~ ul
+	max-height: 5000px
+	transition: max-height 2s ease-in
 .wrap-phone
 	display: flex
 	align-items: center
 	@media screen and (max-width: 1000px)
 		justify-content: space-between
-	// @media screen and (max-width: 870px)
-	// 	display: none
-	// 	flex-wrap: wrap	
+	@media screen and (max-width: 870px)
+		position: absolute
+		right: 2%
+		top: 1.6%
+		// display: none
+		// flex-wrap: wrap	
 .phone
 	// margin-top: 2.75em
 	font-size: 1.5em
@@ -84,11 +118,18 @@ header
 	margin-right: 2.3em
 	@media screen and (max-width: 1000px)
 		margin-right: 5%
+	@media screen and (max-width: 870px)
+		font-size: 1.3em
 	i
 		font-size: 2em
 		position: absolute
 		top: -0.3em
 		left: -1.4em
+		@media screen and (max-width: 870px)
+			display: none
+			// font-size: 1.6em
+			// top: -0.2em
+			// left: -1.4em
 .nav-btn
 	display: inline-flex
 	align-items: center	
@@ -105,6 +146,10 @@ header
 		background-color: #fff
 		border: 4px solid #3b3646
 		color: #3b3646
+	@media screen and (max-width: 870px)
+		width: 14.85rem
+		height: 3.05rem
+		font-size: 1.3em
 .wrap-header
 	display: flex
 	flex-flow: row nowrap
