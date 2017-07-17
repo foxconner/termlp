@@ -2,15 +2,27 @@
 	background: url("/img/promo-bgi.jpg") no-repeat
 	background-size: cover
 	height: 57.25rem
+	display: flex
+	align-items: center
+	@media screen and (max-width: 870px)
+		height: auto
 .wrap-promo
 	display: flex
 	flex-flow: row nowrap
 	justify-content: space-between
 	align-items: center
 	margin: 0 auto
+	width: 100%
 	max-width: $max-width
 	padding: 7rem 7.5rem
 	color: #fff
+	@media screen and (max-width: 1230px)
+		padding: 0
+		width: 95%
+	@media screen and (max-width: 870px)
+		flex-direction: column-reverse
+		padding: 5% 0
+		// position: relative
 	h2
 		text-transform: uppercase
 		font-weight: 900
@@ -34,5 +46,22 @@
 		width: 43.1875rem
 		height: auto
 		transition: all ease 1s
+		@media screen and (max-width: 1230px)
+			width: 95%
+		@media screen and (max-width: 870px)
+			width: 50%
 	.btn
 		margin: 1rem 0 0 6rem 
+.wrap-promo-img
+	@media screen and (max-width: 1230px)
+		width: 40%
+		margin-left: 20px
+	@media screen and (max-width: 870px)
+		// align-self: flex-start
+		display: flex
+		justify-content: center
+		width: 100%
+		margin: 0
+		// position: absolute
+		// top: 5%
+		// left: -1%
