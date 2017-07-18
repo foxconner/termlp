@@ -1,8 +1,69 @@
 .delivery
-	background: url("/img/promo-bgi.jpg") no-repeat
-	background-size: cover
-	height: 57.25rem
+	height: 37.5rem
 	display: flex
 	align-items: center
+	justify-content: center
 	@media screen and (max-width: 870px)
 		height: auto
+.wrap-delivery
+	display: flex
+	justify-content: space-between
+	width: 100%
+	max-width: $max-width
+	color: #3b3646
+	padding: 0 7.5rem
+	@media screen and (max-width: 1230px)
+		padding: 0
+		width: 95%
+	@media screen and (max-width: 870px)
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		padding: 5% 0
+	h3
+		font-size: 1.5rem
+		font-weight: 500
+		padding-bottom: 1.5em
+	.big
+		font-size: 1.5rem
+	p 
+		font-size: 1em
+		padding-bottom: 1.25em
+.faq
+	width: 50%
+	border: 3px solid #3b3646
+	border-radius: 1.5rem
+	padding: 2.5rem
+	position: relative
+	@media screen and (max-width: 870px)
+		width: auto
+	h3
+		padding-bottom: 1em
+	i
+		position: absolute
+		top: 1.9rem
+		right: 1.9rem
+		font-size: 3.65rem
+		@media screen and (max-width: 354px)
+			display: none
+.wrap-delivery-text
+	padding-top: 2.5rem
+	position: relative
+	@media screen and (max-width: 870px)
+		margin-bottom: 5%
+	i
+		position: absolute
+		font-size: 40rem
+		color: rgba(156, 119, 193, 0.12)
+		top: -39%
+		left: -11%
+		@media screen and (max-width: 1060px)
+			font-size: 39rem
+			top: -28%
+			left: -17%		
+		@media screen and (max-width: 870px)
+			font-size: 26rem
+			top: -10%
+			left: -18%
+		@media screen and (max-width: 354px)
+			display: none
