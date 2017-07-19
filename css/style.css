@@ -771,3 +771,33 @@ input.toggle-menu:checked ~ ul {
     @media screen and (max-width: 354px) {
       .wrap-delivery-text i {
         display: none; } }
+
+.testim {
+  background: url("/img/testim-bgi.jpg") no-repeat;
+  background-size: cover;
+  height: 37.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media screen and (max-width: 870px) {
+    .testim {
+      height: auto; } }
+
+.wrap-testim {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1920px;
+  color: #fff;
+  padding: 0 7.5rem; }
