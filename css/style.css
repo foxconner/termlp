@@ -775,7 +775,7 @@ input.toggle-menu:checked ~ ul {
 .testim {
   background: url("/img/testim-bgi.jpg") no-repeat;
   background-size: cover;
-  height: 37.5rem;
+  height: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -783,21 +783,35 @@ input.toggle-menu:checked ~ ul {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
-  @media screen and (max-width: 870px) {
-    .testim {
-      height: auto; } }
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .wrap-testim {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1920px;
   color: #fff;
-  padding: 0 7.5rem; }
+  width: 85%;
+  max-width: 1000px;
+  padding: 5rem 0 3rem 0; }
+
+.item {
+  outline: none; }
+  .item img {
+    border-radius: 50%;
+    margin: 0 auto; }
+  .item h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 2rem; }
+  .item div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 2rem; }
