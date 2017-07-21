@@ -1,0 +1,36 @@
+footer
+	background: url("/img/footer-bgi.jpg") no-repeat
+	background-size: cover
+	height: auto
+	color: #fff
+	display: flex
+	justify-content: center
+.wrap-footer
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	width: 100%
+	max-width: $max-width
+	padding: 3rem 7.5rem 2rem 7.5rem
+	@media screen and (max-width: 870px)
+		justify-content: space-around
+		padding: 3rem 0 2rem 0
+		width: 95%
+		font-size: 1.5rem
+		div:nth-child(n+1)
+			margin: 15px
+	.copyright
+		align-self: flex-end
+	nav
+		text-transform: uppercase
+		// li
+		// 	margin-bottom: .5rem
+	// .tel
+	// 	i
+	// 	 font-size: 2rem
+a
+	color: #fff
+li
+	list-style: none
+	margin-bottom: .5rem
