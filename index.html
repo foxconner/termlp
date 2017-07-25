@@ -25,7 +25,7 @@
 				</nav>
 				<div class="wrap-phone">
 					<a href="tel:+7-727-2450003" class="phone"><i class="icon-phone-circled"></i>+7(727)2450003</a>
-					<a href="#" class="nav-btn">заказать звонок</a>
+					<button class="nav-btn open-popup">заказать звонок</button>
 				</div>
 			</div>
 		</div>
@@ -55,7 +55,7 @@
 				<h3>Ваша экономия 1990 тенге!</h3>
 				<h3>Оплата при получении. <a href="#">В&nbsp;подарок компактный цифровой<br />
 				термометр</a> с&nbsp;выносным датчиком</h3>
-				<a href="#" class="btn">заказать звонок</a>
+				<button class="btn open-popup">заказать звонок</button>
 			</div>
 		</div>
 	</header>
@@ -89,7 +89,7 @@
 					    <li>Наши термометры просты в&nbsp;эксплуатации.</li>
 					    <li>Гарантия 12&nbsp;месяцев</li>
 					</ul>
-					<a href="#" class="btn">заказать звонок</a>
+					<button class="btn open-popup">заказать звонок</button>
 				</div>
 				<div class="wrap-promo-img">
 					<img src="/img/termo_2.png" alt="Термометр с выносным датчиком">
@@ -179,36 +179,46 @@
 		<footer>
 			<div class="wrap-footer">
 				<nav>
-				<!-- <input type="checkbox" name="toggle" id="menu" class="toggle-menu">
-				<label for="menu" class="toggle-menu"><span>☰</label> -->
-				<ul>
-					<li><a href="#home">главная</a></li>
-					<li><a href="#promo">акция</a></li>
-					<li><a href="#delivery">доставка&nbsp;и&nbsp;оплата</a></li>
-					<li><a href="#testim">отзывы</a></li>
-				</ul>
-			</nav>
-			<div class="tel">
-				<!-- <p>Телефоны:</p> -->
-				<ul>
-					<li><a href="tel:+7-727-2450003"><i class="icon-phone-1"></i>+7(727)2450003</a></li>
-					<li><a href="tel:+7-705-2232801"><i class="icon-mobile"></i>+7(705)2232801</a></li>
-					<li><a href="tel:+7-707-2232801"><i class="icon-mobile"></i>+7(707)2232801</a></li>
-					<li><a href="mailto:shop@thermostat.kz"><i class="icon-mail"></i>shop@thermostat.kz</a></li>
-				</ul>				
-			</div>
-			<!-- <div class="email">
-				<a href="mailto:shop@thermostat.kz">shop@thermostat.kz</a>
-			</div> -->
-			<div class="copyright">
-				<p>&copy; ИП «Арыстанов», 2017</p>
-			</div>
+					<!-- <input type="checkbox" name="toggle" id="menu" class="toggle-menu">
+					<label for="menu" class="toggle-menu"><span>☰</label> -->
+					<ul>
+						<li><a href="#home">главная</a></li>
+						<li><a href="#promo">акция</a></li>
+						<li><a href="#delivery">доставка&nbsp;и&nbsp;оплата</a></li>
+						<li><a href="#testim">отзывы</a></li>
+					</ul>
+				</nav>
+				<div class="tel">
+					<!-- <p>Телефоны:</p> -->
+					<ul>
+						<li><a href="tel:+7-727-2450003"><i class="icon-phone-1"></i>+7(727)2450003</a></li>
+						<li><a href="tel:+7-705-2232801"><i class="icon-mobile"></i>+7(705)2232801</a></li>
+						<li><a href="tel:+7-707-2232801"><i class="icon-mobile"></i>+7(707)2232801</a></li>
+						<li><a href="mailto:shop@thermostat.kz"><i class="icon-mail"></i>shop@thermostat.kz</a></li>
+					</ul>				
+				</div>
+				<!-- <div class="email">
+					<a href="mailto:shop@thermostat.kz">shop@thermostat.kz</a>
+				</div> -->
+				<div class="copyright">
+					<p>&copy; ИП «Арыстанов», 2017</p>
+				</div>
 			</div>
 		</footer>
 	</main>
+	<div class="popup">
+		<form action="">
+			<p>Ваше имя:&nbsp;&nbsp;<input type="text" name="Имя" class="input" placeholder="Ваше имя" autofocus required pattern="[A-Za-zА-Яа-яЁё]+$"></p>
+			<p>Ваш e-mail:&nbsp;&nbsp;<input type="email" name="e-mail" class="input" placeholder="example@mail.ru"></p>
+			<p>Ваш телефон:&nbsp;&nbsp;<input type="tel" name="Телефон" class="input" placeholder="+7-7XX-XXXXXXX" required></p>
+			<input type="submit" value="Отправить" class="nav-btn">
+		</form>
+	</div>
+	<div class="bg-popup"></div>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/carousel.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

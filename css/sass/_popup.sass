@@ -1,0 +1,54 @@
+.popup
+	width: 24rem
+	height: 21rem
+	font-size: 1rem
+	color: #fff
+	// background: url("/img/testim-bgi.jpg") no-repeat
+	// background-size: cover
+	background-color: rgba(24, 10, 31, 0.67)
+	z-index: 100
+	position: absolute
+	display: flex
+	justify-content: center
+	align-items: center
+	left: -10000px
+	right: 0
+	margin: auto
+	border-radius: .6rem
+	padding-top: 1rem
+	border: 1px solid #fff
+	transition: all .4s
+	&.active
+		left: 0
+	input
+		width: 14rem
+		height: 2.5rem
+		border-radius: 1.5rem
+		&.input
+			padding-left: 0.5rem
+			font-size: 1rem
+		&.nav-btn
+			height: 3.1rem
+			width: 11rem
+			text-transform: none
+			align-self: center
+			border: 1px solid #fff
+			margin-top: .5rem
+	p
+		// text-align: right
+		margin-bottom: 2rem
+	form
+		display: flex
+		flex-flow: column nowrap
+		align-items: flex-end
+.bg-popup
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 99
+	background: rgba(0,0,0, .7)
+	display: none
+	&.active
+		display: block
