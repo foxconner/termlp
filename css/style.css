@@ -914,9 +914,9 @@ li {
   border-radius: .6rem;
   padding-top: 1rem;
   border: 1px solid #fff;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s; }
+  -webkit-transition: left .4s;
+  -o-transition: left .4s;
+  transition: left .4s; }
   .popup.active {
     left: 0; }
   .popup input {
