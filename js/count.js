@@ -5,12 +5,17 @@ $(document).ready(function(){
 		language : 'russian',
 		callbacks : {
 			stop : function() {
-				$('.massage').html('Время акции истекло!');
+				$('.massage').html('Время акции истекло!<br><br>');
 			}
 		}
 	});
 
-	clock.setTime(50000);
+	var dt = 'Sep 15 2017 00:00:00';
+	var first = new Date(dt);
+	var last = new Date();
+	var remaining = (first - last) / 1000;	
+
+	clock.setTime(remaining);
 	clock.setCountdown(true);
 	clock.start();
 

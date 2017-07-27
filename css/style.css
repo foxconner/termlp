@@ -693,7 +693,11 @@ input.toggle-menu:checked ~ ul {
   zoom: 0.75;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
-  transform: scale(1); }
+  transform: scale(1);
+  -moz-transform: scale(0.8); }
+  @media screen and (max-width: 688px) {
+    .count {
+      -moz-transform: scale(0); } }
   @media screen and (max-width: 520px) {
     .count {
       zoom: 0.7; } }
