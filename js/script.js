@@ -21,11 +21,14 @@ $("form").submit(function() { //Change
 		url: "mail.php", //Change
 		data: th.serialize()
 	}).done(function() {
-		alert("Thank you!");
+		alert("Спасибо за Ваш интерес!\n\nВаши данные отправлены.\nНаш менеджер свяжется с Вами в ближайшее время.");
 		setTimeout(function() {
-			// Done Functions
 			th.trigger("reset");
-		}, 1000);
+		}, 500);
+		setTimeout(function() {
+			$('.popup').removeClass('active');
+			$('.bg-popup').fadeOut();
+		}, 1500);
 	});
 	return false;
 });
