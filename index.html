@@ -5,30 +5,27 @@
 	<meta name="viewport" content="width=device-width,  maximum-scale=1.5" />
 	<title>Универсальный термометр-щуп</title>
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="flipclock/flipclock.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 	<link href="/favicon.ico" rel="icon">	
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
-	<script type="text/javascript" src="slick/slick.min.js" defer></script>
-	<script type="text/javascript" src="js/carousel.js" defer></script>
-	<script type="text/javascript" src="js/script.js" defer></script>	
 </head>
 <body>
 	<div class="popup">
-	<form>
+		<form>
 
-		<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="thermostat.kz">
-		<input type="hidden" name="admin_email" value="shop@thermostat.kz">
-		<input type="hidden" name="form_subject" value="Заказ звонка">
-		<!-- END Hidden Required Fields -->
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="thermostat.kz">
+			<input type="hidden" name="admin_email" value="shop@thermostat.kz">
+			<input type="hidden" name="form_subject" value="Заказ звонка">
+			<!-- END Hidden Required Fields -->
 
-		<p>Ваше имя:&nbsp;&nbsp;<input type="text" name="Имя" class="input" placeholder="Ваше имя" autofocus required pattern="[A-Za-zА-Яа-яЁё]+$"></p>
-		<p>Ваш e-mail:&nbsp;&nbsp;<input type="email" name="e-mail" class="input" placeholder="example@mail.ru"></p>
-		<p>Ваш телефон:&nbsp;&nbsp;<input type="tel" name="Телефон" class="input" placeholder="+7-7XX-XXXXXXX" required></p>
-		<input type="submit" value="Отправить" class="nav-btn">
-	</form>
+			<p>Ваше имя:&nbsp;&nbsp;<input type="text" name="Имя" class="input" placeholder="Ваше имя" autofocus required pattern="[A-Za-zА-Яа-яЁё]+$"></p>
+			<p>Ваш e-mail:&nbsp;&nbsp;<input type="email" name="e-mail" class="input" placeholder="example@mail.ru"></p>
+			<p>Ваш телефон:&nbsp;&nbsp;<input type="tel" name="Телефон" class="input" placeholder="+7-7XX-XXXXXXX" required></p>
+			<input type="submit" value="Отправить" class="nav-btn">
+		</form>
 	</div>
 	<div class="bg-popup"></div>
 	<header>
@@ -74,7 +71,7 @@
 				</ul>
 				<h3>Цена <span class="line-through">5980 тенге</span>, 3990 тенге со&nbsp;скидкой!</h3>
 				<h3>Ваша экономия 1990 тенге!</h3>
-				<h3>Оплата при получении. <a href="#">В&nbsp;подарок компактный цифровой<br />
+				<h3>Оплата при получении. <a href="#promo">В&nbsp;подарок компактный цифровой<br />
 				термометр</a> с&nbsp;выносным датчиком</h3>
 				<button class="btn open-popup">заказать звонок</button>
 			</div>
@@ -87,7 +84,9 @@
 				<div class="wrap-promo-text">
 					<div class="wrap-h">
 						<h2>акция</h2>
-						<h3>Только до первого августа дарим подарки!</h3>
+						<h3>Только до 15 сентября дарим подарки!<br>До конца акции осталось:</h3>
+						<div class="count"></div>
+						<div class="massage"></div>
 					</div>
 					<p>При покупке универсального <nobr>термометра-щупа</nobr> мы&nbsp;дарим компактный цифровой термометр
 				    <br /> с&nbsp;выносным датчиком. Измеряет температуру в&nbsp;автомобиле, аквариуме, на&nbsp;улице за&nbsp;окном.</p>
@@ -113,8 +112,12 @@
 					<button class="btn open-popup">заказать звонок</button>
 				</div>
 				<div class="wrap-promo-img">
-					<img src="/img/termo_2.png" alt="Термометр с выносным датчиком">
+					<img src="/img/termo_2.jpg" alt="Термометр с выносным датчиком">
+					<div class="wrap-ribbon">
+						<img src="/img/termo_2.png" alt="Ribbon">
+					</div>
 				</div>
+				<div class="small-img"></div>
 			</div>
 		</section>
 		<a name="delivery"></a>
@@ -168,7 +171,7 @@
 					</div>
 					<div class="item testim-2">
 						<img src="/img/kanat.jpg" alt="Канат, 45 лет.">
-						<h3>Канат, 45 лет.</h3>
+						<h3>Александр, 45 лет.</h3>
 						<div>
 							<p>У нас производственная компания, изготавливаем мясные полуфабрикаты.<br>  Очень важно соблюдать температурный режим при транспортировке продукции.<br> Термометр-щуп измеряет температуру очень быстро и точно.<br> Электронный термометр-щуп  незаменимая вещь для производственников. 
 							</p>
@@ -227,5 +230,12 @@
 			</div>
 		</footer>
 	</main>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
+	<script type="text/javascript" src="slick/slick.min.js" defer></script>
+	<script type="text/javascript" src="js/carousel.js" defer></script>
+	<script type="text/javascript" src="js/script.js" defer></script>
+	<script type="text/javascript" src="flipclock/flipclock.min.js" defer></script>
+	<script type="text/javascript" src="js/count.js" defer></script>
 </body>
 </html>

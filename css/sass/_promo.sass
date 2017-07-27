@@ -1,11 +1,11 @@
 .promo
 	background: url("/img/promo-bgi.jpg") no-repeat
 	background-size: cover
-	height: 57.25rem
+	height: auto
 	display: flex
 	align-items: center
-	@media screen and (max-width: 870px)
-		height: auto
+	// @media screen and (max-width: 870px)
+	// 	height: auto
 .wrap-promo
 	display: flex
 	flex-flow: row nowrap
@@ -17,7 +17,7 @@
 	padding: 7rem 7.5rem
 	color: #fff
 	@media screen and (max-width: 1230px)
-		padding: 0
+		padding: 7rem 0
 		width: 95%
 	@media screen and (max-width: 870px)
 		flex-direction: column-reverse
@@ -29,11 +29,14 @@
 		font-weight: 900
 		letter-spacing: 4px
 		font-size: 2.25rem
-		padding-bottom: .6em
+		// padding-bottom: .6em
 	h3
 		font-size: 1.5rem
 		font-weight: 400
-		padding-bottom: 1.5em
+		padding-bottom: 1.4em
+		line-height: 1.5
+		@media screen and (max-width: 415px)
+			padding-bottom: .5em
 	.wrap-h
 		display: inline-block
 		text-align: center
@@ -42,9 +45,13 @@
 		padding-bottom: 1.25em
 	ul 
 		padding-left: 2em
-		padding-bottom: 2em
-	img
-		width: 43.1875rem
+		padding-bottom: .7em
+	.btn
+		margin: 1rem 0 0 6rem 
+.wrap-promo-img
+	position: relative
+	&>img
+		width: 50rem
 		height: auto
 		transition: all ease 1s
 		@media screen and (max-width: 1230px)
@@ -53,9 +60,13 @@
 			width: 66%
 			height: 100%
 			margin: 15%
-	.btn
-		margin: 1rem 0 0 6rem 
-.wrap-promo-img
+			display: none
+	.wrap-ribbon
+		position: absolute
+		top: -10px
+		left: -8px
+		@media screen and (max-width: 870px)
+			display: none
 	@media screen and (max-width: 1230px)
 		width: 40%
 		margin-left: 20px
@@ -68,3 +79,47 @@
 		// position: absolute
 		// top: 5%
 		// left: -1%
+.count
+	zoom: 0.75
+	transform: scale(1)
+	@media screen and (max-width: 520px)
+		zoom: 0.7
+	@media screen and (max-width: 485px)
+		zoom: 0.6
+	@media screen and (max-width: 415px)
+		zoom: 0.5
+.small-img
+	background: url("/img/termo_2_light.png") no-repeat
+	background-size: contain
+	width: 73%
+	height: 530px
+	margin: 3rem 11rem 3rem 11rem
+	display: none
+	@media screen and (max-width: 870px)
+		display: block
+	@media screen and (max-width: 780px)
+		height: 500px
+	@media screen and (max-width: 700px)
+		height: 470px
+	@media screen and (max-width: 670px)
+		width: 78%
+	@media screen and (max-width: 600px)
+		width: 87%
+	@media screen and (max-width: 560px)
+		width: 95%
+	@media screen and (max-width: 530px)
+		height: 450px
+	@media screen and (max-width: 500px)
+		height: 430px
+	@media screen and (max-width: 475px)
+		height: 410px
+	@media screen and (max-width: 450px)
+		height: 383px
+	@media screen and (max-width: 420px)
+		height: 360px
+	@media screen and (max-width: 405px)
+		height: 345px
+	@media screen and (max-width: 380px)
+		height: 325px
+	@media screen and (max-width: 360px)
+		height: 308px
