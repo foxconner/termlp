@@ -815,6 +815,8 @@ input.toggle-menu:checked ~ ul {
     padding-bottom: 1.5em; }
   .wrap-delivery .big {
     font-size: 1.5rem; }
+    .wrap-delivery .big > a {
+      color: #3b3646; }
   .wrap-delivery p {
     font-size: 1em;
     padding-bottom: 1.25em; }
