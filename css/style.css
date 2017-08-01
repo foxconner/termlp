@@ -759,6 +759,8 @@ input.toggle-menu:checked ~ ul {
       height: 308px; } }
 
 .delivery {
+  background: url("/img/del-bgi.jpg") no-repeat;
+  background-size: cover;
   height: 37.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -774,7 +776,9 @@ input.toggle-menu:checked ~ ul {
   justify-content: center; }
   @media screen and (max-width: 870px) {
     .delivery {
-      height: auto; } }
+      height: auto;
+      background: url("/img/del-bgi_small.jpg") no-repeat;
+      background-size: contain; } }
 
 .wrap-delivery {
   display: -webkit-box;
@@ -847,25 +851,6 @@ input.toggle-menu:checked ~ ul {
   @media screen and (max-width: 870px) {
     .wrap-delivery-text {
       margin-bottom: 5%; } }
-  .wrap-delivery-text i {
-    position: absolute;
-    font-size: 40rem;
-    color: rgba(156, 119, 193, 0.12);
-    top: -39%;
-    left: -11%; }
-    @media screen and (max-width: 1060px) {
-      .wrap-delivery-text i {
-        font-size: 39rem;
-        top: -28%;
-        left: -17%; } }
-    @media screen and (max-width: 870px) {
-      .wrap-delivery-text i {
-        font-size: 26rem;
-        top: -10%;
-        left: -18%; } }
-    @media screen and (max-width: 354px) {
-      .wrap-delivery-text i {
-        display: none; } }
 
 .testim {
   background: url("/img/testim-bgi.jpg") no-repeat;
