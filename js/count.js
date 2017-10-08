@@ -13,7 +13,7 @@ $(document).ready(function(){
 	var dt = 'Sep 15 2017 00:00:00';
 	var first = new Date(dt);
 	var last = new Date();
-	var remaining = (first - last) / 1000;	
+	var remaining = first < last ? 0 : (first - last) / 1000;	
 
 	clock.setTime(remaining);
 	clock.setCountdown(true);
